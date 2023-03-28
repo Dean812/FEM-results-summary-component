@@ -1,0 +1,110 @@
+/*---- @font  ----*/
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+}
+
+/* ----  Global  ---- */
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'HankenGrotesk', sans-serif;
+    /* tester , je sais pas si ca marche */
+}
+
+p {
+    font-size: 18px;
+}
+
+#largeur {
+    width: 375px;
+}
+
+
+
+.colorWhite {
+    color: white;
+}
+
+.colorBlack {
+    color: black;
+}
+
+/* ----  top    ----*/
+
+.top {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    color: hsl(241, 100%, 89%);
+    padding: 0 5%;
+}
+
+h2 {
+    padding: 30px 0;
+}
+
+.border {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+h4 {
+    text-align: left;
+}
+
+/* ----  bottom    ----*/
+.content {
+    display: block;
+}
+
+
+
+.summary {
+    padding: 20px 0;
+}
+
+.bg {
+    border: 3px solid black;
+}
+
+.bg-1 {
+    background: hsl(0, 100%, 67%);
+}
+
+.bg-2 {
+    background: hsl(39, 100%, 56%);
+}
+
+.bg-3 {
+    background: hsl(166, 100%, 37%);
+}
+
+.bg-4 {
+    background: hsl(234, 85%, 45%);
+}
+
+button {
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+}
+
+
+
+/*
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+*/
+
+
+@media (max-width: 1440px) {
+    .top {
+        border-radius: 0px 0px 30px 30px;
+    }
+}

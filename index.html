@@ -10,48 +10,51 @@
 
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <main>
-    <article>
+  <main class="content">
+    <article id="largeur" class="top">
       <h2>Your result</h2>
-      <p>76 / 100</p>
-      <h3>Great</h3>
+      <p class="border"><span class="colorWhite bigdisplay">76</span><br /> of 100</p>
+      <h3 class="colorWhite">Great</h3>
       <p>You scored higher then 65% of the people who have taken these tests.</p>
     </article>
-    <aside>
-      <h2>Summary</h2>
+    <div id="largeur bottom">
+      <h4 class="colorBlack summary">Summary</h4>
       <div>
-        <section>Summary</section>
-        <section>
-          <article><i class="fa-solid fa-bolt"></i>Reaction</article>
-          <aside>80/100</aside>
+        <section class="bg bg-1">
+          <article><i class="fa-solid fa-bolt"></i>Reaction - red </article>
+          <aside><span class="colorBlack">80</span>/100</aside>
         </section>
-        <section>
-          <article><i class="fa-solid fa-brain"></i>Memory</article>
-          <aside>92/100</aside>
+        <section class="bg bg-2">
+          <article><i class="fa-solid fa-brain"></i>Memory - jaune </article>
+          <aside><span class="colorBlack">92</span>/100</aside>
         </section>
-        <section>
-          <article><i class="fa-solid fa-comment-dots"></i>Verbal</article>
-          <aside>61/100</aside>
+        <section class="bg bg-3">
+          <article><i class="fa-solid fa-comment-dots"></i>Verbal - vert </article>
+          <aside><span class="colorBlack">61</span>/100</aside>
         </section>
-        <section>
-          <article><i class="fa-regular fa-eye"></i>Visual</article>
-          <aside>72/100</aside>
+        <section class="bg bg-4">
+          <article><i class="fa-regular fa-eye"></i>Visual - bleu</article>
+          <aside><span class="colorBlack">72</span>/100</aside>
         </section>
         <section>
           <button>Continue</button>
         </section>
       </div>
-    </aside>
+    </div>
   </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Dean</a>.
   </div>
+
+
+
+
 </body>
 
 </html>
