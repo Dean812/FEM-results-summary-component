@@ -54,6 +54,7 @@ h2 {
 }
 
 /* Mobile */
+/* --- top ---  */
 .top {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 0 0 35px 35px;
@@ -62,14 +63,51 @@ h2 {
     width: 375px;
 }
 
+/* --- bottom ---  */
+.bottom {
+    width: 375px;
+    padding: 0 10% ;
+}
+
+h3 {
+    text-align: left;
+}
+
+.summary {
+    padding: 20px 0;
+}
+
+.bg-1 {
+    background: hsl(0, 100%, 67%);
+}
+
+.bg-2 {
+    background: hsl(39, 100%, 56%);
+}
+
+.bg-3 {
+    background: hsl(166, 100%, 37%);
+}
+
+.bg-4 {
+    background: hsl(234, 85%, 45%);
+}
+
+button {
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+}
+
 @media (min-width: 1440px) {
 
-    /* desktop*/
     h1 {
         color: red;
     }
 
+    /* desktop*/
+
     .top {
-        border-radius: 0px 0px 30px 30px;
+        border-radius: 30px;
     }
 }
