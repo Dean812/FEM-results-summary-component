@@ -12,7 +12,6 @@
     box-sizing: border-box;
     text-align: center;
     font-family: 'HankenGrotesk', sans-serif;
-    /* tester , je sais pas si ca marche */
 }
 
 p {
@@ -25,6 +24,7 @@ p {
 
 .colorBlack {
     color: black;
+    font-weight: bold;
 }
 
 h1 {
@@ -66,7 +66,8 @@ h2 {
 /* --- bottom ---  */
 .bottom {
     width: 375px;
-    padding: 0 10% ;
+    padding: 0 50px ;
+    color: hsl(241, 100%, 89%);
 }
 
 h3 {
@@ -77,26 +78,41 @@ h3 {
     padding: 20px 0;
 }
 
+.banderole {
+    border-radius : 5px;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 18px 0;
+}
 .bg-1 {
-    background: hsl(0, 100%, 67%);
+    background: hsla(0, 100%, 67%, 0.1);
 }
 
 .bg-2 {
-    background: hsl(39, 100%, 56%);
+    background: hsla(39, 100%, 56%, 0.1);
 }
 
 .bg-3 {
-    background: hsl(166, 100%, 37%);
+    background: hsla(166, 100%, 37%, 0.1);
 }
 
 .bg-4 {
-    background: hsl(234, 85%, 45%);
+    background: hsla(234, 85%, 45%, 0.1);
+}
+section>article:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+}
+section>article:nth-child(2) {
+    color: hsl(39, 100%, 56%);
 }
 
 button {
     width: 100%;
+    padding: 10px 0;
     background: hsl(224, 30%, 27%);
     color: hsl(221, 100%, 96%);
+    border-radius : 30px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 1440px) {
