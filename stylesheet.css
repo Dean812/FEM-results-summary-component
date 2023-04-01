@@ -32,14 +32,14 @@ h1 {
 }
 
 .bigLetter {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
 }
 
 .bubble {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     padding-top: 20px;
     margin-bottom: 25px;
     background: linear-gradient(hsla(260, 100%, 1%, 0.3), hsla(241, 81%, 54%, 0));
@@ -53,8 +53,10 @@ h2 {
     padding-bottom: 30px;
 }
 
-/* Mobile */
-/* --- top ---  */
+.frame {
+    margin: 0 20px;
+}
+
 .top {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 0 0 35px 35px;
@@ -63,11 +65,10 @@ h2 {
     width: 375px;
 }
 
-/* --- bottom ---  */
 .bottom {
     width: 375px;
     padding: 0 30px;
-    color: hsl(241, 100%, 89%);
+    color: hsl(240, 15%, 64%);
 }
 
 h3 {
@@ -87,7 +88,6 @@ i {
     margin-bottom: 20px;
     padding: 18px 0;
     display: flex;
-    justify-content: center;
 }
 
 .bg-1 {
@@ -136,13 +136,40 @@ button {
     margin-bottom: 20px;
 }
 
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+section>aside {
+    font-weight: bold;
+    padding-left: 80px;
+}
+
+.attribution {
+    margin-top: 50px;
+}
+
 @media (min-width: 1440px) {
 
-    h1 {
-        color: red;
+    .top,
+    .bottom {
+        margin: 0;
     }
 
-    /* desktop*/
+    body {
+        min-height: 100vh;
+        border: solid 5px red;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .frame {
+        margin: 0 -25px;
+    }
 
     .top {
         border-radius: 30px;
